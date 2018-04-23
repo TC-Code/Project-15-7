@@ -1,2 +1,2 @@
 # Project-15-7
-Timer ES6
+Timer React ES6
