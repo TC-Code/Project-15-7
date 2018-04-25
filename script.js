@@ -66,14 +66,14 @@ class StopWatch extends React.Component {
   }
 
   saveToList() {
-    let resultsList = document.querySelector(".results");
+    let resultsList = ReactDOM.findDOMNode(this).querySelector(".results");
     let listItem = document.createElement("li");
     listItem.innerText = this.format(this.state.times);
     resultsList.appendChild(listItem);
   }
 
   clearList() {
-    let clearResultsList = document.querySelector(".results");
+    let clearResultsList = ReactDOM.findDOMNode(this).querySelector(".results");
     while (clearResultsList.firstChild) {
       clearResultsList.removeChild(clearResultsList.firstChild);
     }
@@ -145,3 +145,4 @@ function pad0(value) {
 
 const element = React.createElement(StopWatch);
 ReactDOM.render(element, document.getElementById("app"));
+ReactDOM.render(element, document.getElementById("app-two"));

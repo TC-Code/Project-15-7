@@ -97,7 +97,7 @@ var StopWatch = function (_React$Component) {
   }, {
     key: "saveToList",
     value: function saveToList() {
-      var resultsList = document.querySelector(".results");
+      var resultsList = ReactDOM.findDOMNode(this).querySelector(".results");
       var listItem = document.createElement("li");
       listItem.innerText = this.format(this.state.times);
       resultsList.appendChild(listItem);
@@ -105,7 +105,7 @@ var StopWatch = function (_React$Component) {
   }, {
     key: "clearList",
     value: function clearList() {
-      var clearResultsList = document.querySelector(".results");
+      var clearResultsList = ReactDOM.findDOMNode(this).querySelector(".results");
       while (clearResultsList.firstChild) {
         clearResultsList.removeChild(clearResultsList.firstChild);
       }
@@ -213,3 +213,4 @@ function pad0(value) {
 
 var element = React.createElement(StopWatch);
 ReactDOM.render(element, document.getElementById("app"));
+ReactDOM.render(element, document.getElementById("app-two"));
