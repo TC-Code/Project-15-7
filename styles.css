@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Cute+Font|Jura|Orbitron&subset=latin-ext");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Cute Font", cursive;
+  color: #daa520;
+  background-color: #1a2e44;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin: 60px auto;
+  width: 340px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #213c57;
+  border-radius: 15px;
+}
+
+.controls-top,
+.controls-bottom {
+  margin-top: 20px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  line-height: 2.2rem;
+  font-size: 2rem;
+  color: #daa520;
+  box-shadow: 1px 1px 10px #daa520;
+  border-radius: 5px;
+}
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 280px;
+  height: 80px;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.results {
+  font-size: 2rem;
+  text-align: center;
+}
